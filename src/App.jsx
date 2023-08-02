@@ -12,14 +12,14 @@ function App() {
     <div id="container">
       {/* <h1>Hello React Router!</h1> */}
       <div id="navbar">
-        <Link to='./components/blue.jsx'>Blue</Link>
-        <Link to='./components/red.jsx'>Red</Link>
+        <Link to='/Blue.jsx'>Blue</Link>
+        <Link to='/Red.jsx'>Red</Link>
       </div>
       <div id="main-section">
         <Routes>
-          <Route path="/blue" element={Blue} />
+          <Route path="/Blue.jsx" element={<Blue />} />
           
-          <Route path="/red" element={Red} />
+          <Route path="/Red.jsx" element={<Red />} />
         </Routes>
       </div>
     </div>
